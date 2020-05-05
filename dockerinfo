@@ -1,0 +1,22 @@
+scratch  imagem mais leve 
+
+gera um build da imagem de nome goteste com tag latest
+docker build -t goteste:latest . //constroi minha imagem 
+
+
+docker run goteste -d
+
+
+docker build -t yuribrandeliki/goteste .
+
+
+
+ docker push yuribrandeliki/goteste -d
+ 
+ 
+ 
+ rodar sem prender terminal
+ docker run -d -p 8081:8081 yuribrandeliki/goteste
+
+
+ docker-compose up -d
